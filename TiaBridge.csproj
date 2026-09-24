@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  
+<PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <OutputType>Exe</OutputType>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+   
+       
+<Reference Include="Microsoft.Office.Interop.Outlook">
+    <HintPath>C:\WINDOWS\assembly\GAC_MSIL\Microsoft.Office.Interop.Outlook\15.0.0.0__71e9bce111e9429c\Microsoft.Office.Interop.Outlook.dll</HintPath>
+    <EmbedInteropTypes>false</EmbedInteropTypes>
+  </Reference>
+  
+
+
+    <Reference Include="Aspose.Email">
+    <HintPath>C:\_Projekt\_Projekt\GM_Tools_ViCo\trunk\Overlay\packages\Aspose.Email.25.1.0\lib\net45\Aspose.Email.dll</HintPath>
+    <EmbedInteropTypes>false</EmbedInteropTypes>
+  </Reference>
+
+ <Reference Include="office">
+    <HintPath>C:\WINDOWS\assembly\GAC_MSIL\Office\15.0.0.0__71e9bce111e9429c\Office.dll</HintPath>      <!-- Die Datei heißt wirklich office.dll -->
+    <EmbedInteropTypes>false</EmbedInteropTypes>
+    <Private>true</Private>
+  </Reference>
+
+  <Reference Include="System.Windows.Forms">
+    <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Windows.Forms.dll</HintPath>      <!-- Die Datei heißt wirklich office.dll -->
+    <EmbedInteropTypes>false</EmbedInteropTypes>
+    <Private>true</Private>
+  </Reference>
+
+  <Reference Include="Microsoft.CSharp" />
+    </ItemGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="ClosedXML" Version="0.105.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
+  </ItemGroup>
+</Project>
